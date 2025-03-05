@@ -31,12 +31,11 @@ show_slides(week)
 show_activity(week, show_solutions = FALSE)
 ```
 
+## In-class Code
 
-<!-- ## Seminar code -->
-
-<!-- ::: {.callout appearance="minimal"} -->
-<!-- <i class="bi bi-download"></i> [Seminar_code_week1.R](Seminar_code_week1.R){download="Seminar_code_week1.R"} -->
-<!-- ::: -->
+::: {.callout appearance="minimal"}
+<i class="bi bi-download"></i> [Week1-code.R](Week1-code.R){download="Week1-code.R"}
+:::
 
 
 ## Tutorial exercises
