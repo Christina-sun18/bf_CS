@@ -27,34 +27,6 @@ olympic_running |>
 
 ## PBS --------------------------------------------------------------
 
-?PBS
-PBS
-  # 4 Keys [336 time series = 84 (ATC2) * 2 (Concession) * 2 (Type-patient) ]
-  # 2 variables/measures
-84*2*2
-
-PBS |> View()
-
-PBS |> distinct(ATC1)
-PBS |> distinct(ATC1_desc)
-PBS |> distinct(ATC2, ATC2_desc)
-
-PBS |> distinct(Concession, Type)
-
-PBS |> tail()
-
-PBS |>
-  filter(ATC2 == "A10")
-
-PBS |>
-  filter(ATC2=="A10") |>
-  select(Cost) # Notice Keys and Index are automatically selected
-
-PBS |>
-  filter(ATC2 == "A10") |>
-  select(Cost) |>
-  filter_index(~"1991 Jul")
-
   # Let's sum Cost of A10 across Concession and Type, i.e., total A10 cost
 PBS |>
   filter(ATC2 == "A10") |>
@@ -67,7 +39,7 @@ a10
 # Time Series patterns ----------------------------------------
 
 a10 |>
-  autoplot(Cost) + #Cost
+  autoplot() + #Cost
   labs(
     title = "Australian antidiabetic drug sales",
     y = "$ (millions)"
@@ -112,7 +84,7 @@ us_employment |>
 
 ## Google, Apple, Facebook, Amazon
 gafa_stock |>
-  filter(Symbol == "AMZN", year(Date) >= 2014) |>
+  filter(Symbol == "AMZN", year(Date) >= 2018) |>
   autoplot(Close) +
   labs(
     title = "Amazon closing stock price",
@@ -142,6 +114,9 @@ pelt |>
   # Lynx eating Hare
 
 
+### BACK TO SLIDES
+
+
 # ACF  -------------
 
 ## Aus bricks - you have seen this in the video
@@ -157,6 +132,10 @@ aus_production |>
 aus_production |>
   filter(year(Quarter) >= 1979) |>
   gg_season(Beer)
+
+aus_production |>
+  filter(year(Quarter) >= 1979) |>
+  gg_lag(Beer)
 
 aus_production |>
   filter(year(Quarter) >= 1979) |>
@@ -206,7 +185,7 @@ pelt |>
   autoplot()
 # you'll see plenty of examples in the tutes.
 
-# Your turn 1 ---------------------------------------------------------
+# Lectorial activity 1  ----------------------------------------------------------
 
 ## Snowy mountains tourism --------------------------------------------
 
@@ -312,35 +291,8 @@ top3_tourism |>
     y = "thousands of trips", x= "Year"
   )
 
-# Your turn 2 ------------------------------------------
 
-# WHITE NOISE ------------------------------------------
-
-seq_len(36)
-1:36
-rnorm(36)
-
-set.seed(6)
-
-wn <- tsibble(t = 1:36, y = rnorm(36), index = t)
-
-wn |> autoplot() + labs(title = "White noise")
-wn |> ACF() |> autoplot()
-
-set.seed(6)
-wn <- tsibble(t = seq_len(3600), y = rnorm(3600),
-              index = t)
-wn |> autoplot() + labs(title = "White noise")
-wn |> ACF() |> autoplot()
-
-set.seed(6)
-wn <- tsibble(t = seq_len(3600), y = rnorm(3600,mean=100,sd=100),
-              index = t)
-wn |> autoplot() + labs(title = "White noise")
-ACF(wn) |> autoplot()
-
-
-# Your turn 3 -----------------------------------------------------
+# Lectorial Activity 3 -----------------------------------------------------
 
 ## Differencing google closing price ------------------------------
 
