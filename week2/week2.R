@@ -10,8 +10,8 @@ olympic_running$Year |> range()
 
 olympic_running |>
   filter(Length=="100") |>
-  autoplot(Time)  # add + geom_point()
-
+  autoplot(Time) +  # add + geom_point()
+  geom_point()
 
 # Just to show you what you can do
 olympic_running |>
@@ -39,7 +39,7 @@ a10
 # Time Series patterns ----------------------------------------
 
 a10 |>
-  autoplot() + #Cost
+  autoplot(Cost) + #Cost
   labs(
     title = "Australian antidiabetic drug sales",
     y = "$ (millions)"
@@ -84,7 +84,7 @@ us_employment |>
 
 ## Google, Apple, Facebook, Amazon
 gafa_stock |>
-  filter(Symbol == "AMZN", year(Date) >= 2018) |>
+  filter(Symbol == "AMZN", year(Date) >= 2014) |>
   autoplot(Close) +
   labs(
     title = "Amazon closing stock price",
