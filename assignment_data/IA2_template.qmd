@@ -2,6 +2,8 @@
 title: "ETF3231/5231 Individual Assignment 2"
 author: "Your name and Student ID"
 format: pdf
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r}
@@ -32,9 +34,10 @@ dat <- read_csv("IA_Data.csv",
                 # skip 4 rows as we also skip column names, specified above
                 skip = 4)
 
-# Make sure you select the column with your student ID
+# Feel free to rename your series appropriately
 my_series <- dat %>% 
-  # feel free to rename your series appropriately
+  # Make sure you select the column with your student ID 
+  # Replace 12345678 below with your student ID
   rename(Month = "Student ID", y ="12345678") %>%
   select(Month, y) %>% 
   mutate(Month=yearmonth(Month)) %>% 
