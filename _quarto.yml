@@ -6,7 +6,7 @@ project:
   - "!/slides"
   - "!/handouts"
   - "activities.qmd"
-  - "!/assignmentment_data/IA2_template.qmd"
+  - "!/assignment_data/IA2_template.qmd"
   resources:
     - "CNAME"
 
