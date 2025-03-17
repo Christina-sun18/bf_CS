@@ -34,18 +34,18 @@ Read [Chapter 3 of the textbook](https://otexts.com/fpp3/decomposition.html) and
 show_slides(week)
 ```
 
-<!-- ## Seminar activities -->
+## Seminar activities
 
-<!-- ```{r} -->
-<!-- #| child: activities.md -->
-<!-- ``` -->
+```{r}
+#| child: activities.md
+```
 
 
-<!-- ## Seminar code -->
+## Seminar code
 
-<!-- ::: {.callout appearance="minimal"} -->
-<!-- <i class="bi bi-download"></i> [Seminar_code_week3.R](Seminar_code_week3.R){download="Seminar_code_week3.R"} -->
-<!-- ::: -->
+::: {.callout appearance="minimal"}
+<i class="bi bi-download"></i> [week3_incomplete.R](week3_incomplete.R){download="week3_incomplete.R"}
+:::
 
 
 

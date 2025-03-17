@@ -1,10 +1,5 @@
 
-1. For the following series, find an appropriate Box-Cox transformation in order to stabilise the variance.
-
-    * United States GDP from `global_economy`
-    * Slaughter of Victorian “Bulls, bullocks and steers” in `aus_livestock`
-    * Victorian Electricity Demand from `vic_elec`.
-    * Gas production from `aus_production`
+1. Find an appropriate Box-Cox transformation in order to stabilise the variance for Gas production from `aus_production`.
 
 2. Why is a Box-Cox transformation unhelpful for the `canadian_gas` data?
 
