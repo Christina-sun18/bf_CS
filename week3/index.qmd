@@ -34,7 +34,7 @@ Read [Chapter 3 of the textbook](https://otexts.com/fpp3/decomposition.html) and
 show_slides(week)
 ```
 
-## Seminar activities
+## Lectorial activities
 
 ```{r}
 #| child: activities.md
