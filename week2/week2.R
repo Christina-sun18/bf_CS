@@ -116,6 +116,24 @@ pelt |>
 
 ### BACK TO SLIDES
 
+# White noise and random walks ---------------
+
+# White noise
+
+set.seed(100)
+T=100 # Change to 1000
+my_data <- tsibble(t = seq(T), y = rnorm(T), index = t)
+my_data |> autoplot(y)
+my_data |> ACF(y) |> autoplot()
+my_data |> gg_tsdisplay(y, plot_type = "histogram")
+
+
+# Random walks
+
+T=100 # Change to 1000
+tsibble(t = seq(T), y = cumsum(rnorm(T)), index = t) |>
+  gg_tsdisplay(y, plot_type = "histogram")
+
 
 # ACF  -------------
 
