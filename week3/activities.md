@@ -25,3 +25,8 @@
     e. What happens as you change the values of the two `window` arguments?
     
     f. Can you produce a plausible seasonally adjusted series? 
+
+4. Exam 2024 
+
+    - Section A: Q6 (just for information at the moment)
+    - Section B: Q1, Q2
