@@ -1,0 +1,13 @@
+# Tutorial learning objectives - Week 1
+
+By the end of this tutorial, you should be able to:
+
+-   **Confirm technical setup for the course**
+
+    -   Ensure that R, RStudio, and the fpp3 package are installed on your computer.
+    -   Be comfortable using key tidyverse packages (dplyr, ggplot2) and understand the basics of using **Quarto**.
+
+-   **Successfully work with a Quarto document**
+
+    -   Open and run the `IA_template.qmd` file.
+    -   Knit the document to produce a PDF without errors.
