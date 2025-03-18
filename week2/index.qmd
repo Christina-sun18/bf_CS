@@ -18,6 +18,7 @@ source(here::here("course_info.R"))
 
 -   Complete Exercises 1-4 from [Section 2.10 of the book](https://otexts.com/fpp3/graphics-exercises.html).
 -   We completed Exercise 5 in last week's lectorial.
+-   [Tutorial learning objectives](tute-lo.qmd){target="_blank"}.
 
 ## Exercise solutions
 

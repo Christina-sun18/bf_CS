@@ -25,7 +25,7 @@ week <- as.integer(1 + ((Sys.Date() - as_date(start_semester))/7))
 
 ::: {.column width="70%"}
 
-[**George Athanasopoulos**](https://research.monash.edu/en/persons/george-athanasopoulos).
+[**George Athanasopoulos**](https://research.monash.edu/en/persons/george-athanasopoulos)
 
 Email: [George.Athanasopoulos@monash.edu](mailto:George.Athanasopoulos@monash.edu)
 :::
@@ -39,7 +39,7 @@ Email: [George.Athanasopoulos@monash.edu](mailto:George.Athanasopoulos@monash.ed
 * Tuesday, 3-4pm, George Athanasopoulos, [zoom](https://monash.zoom.us/j/83278647125?pwd=ucZLFJg1AY5Tg4MMl0bqHeA4FWlu6M.1).
 * Wednesday, 1.20-1.50pm, [Kulan Ranasinghe](mailto:kulana@gmail.com), Room H4.62.
 * Thursday, 9.30-10.30am, [Yuru Sun](mailto:yuru.sun@monash.edu), [zoom](https://monash.zoom.us/j/84756747964?pwd=4tzGtq9i6gUNMmGWRHWoVgicB68cKs.1).
-* Friday 12-1pm, [Joan Tan (Head Tutor)](mailto:joan.tan@monash.edu), Room H4.72 and  [zoom](https://monash.zoom.us/j/84756747964?pwd=4tzGtq9i6gUNMmGWRHWoVgicB68cKs.1).
+* Friday 12-1pm, [Joan Tan (Head Tutor)](mailto:joan.tan@monash.edu), Room H4.87 and  [zoom](https://monash.zoom.us/j/84756747964?pwd=4tzGtq9i6gUNMmGWRHWoVgicB68cKs.1).
 
 <!-- ## Pre-exam Consultation -->
 
