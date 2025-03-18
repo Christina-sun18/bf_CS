@@ -24,7 +24,7 @@ The main tasks for Week 1 tutorials will be:
 
 Your tutors will be in your tutorial class to assist you. 
 
-[Tutorial learning objectives](tute-lo.qmd){target="_blank"}.
+[Tutorial learning objectives](tute-lo.qmd).
 
 ## Pre-class activities
 
