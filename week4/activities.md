@@ -11,9 +11,14 @@
 
 6. Now try a decomposition forecasting model.
 
-7. Use `accuracy()` to evaluate Which benchmark fits the data best.
+7. Use `accuracy()` to evaluate which benchmark fits the data best.
 
 8. Use a test set of last 3 years to check forecast accuracy.
 
 9. Now use time series cross-validation to check forecast accuracy.
+
+10. Exam 2024
+
+      - Section A: Q3, Q6
+      - Section B: Q3a, Q3a
 

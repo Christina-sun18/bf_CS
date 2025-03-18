@@ -30,4 +30,4 @@
 
     - Section A: Q6 (just for information at the moment)
     - Section B: Q1, Q2
-    - *Solutions to be uploaded after the Lectorial*
+    - Solutions [[week3_Exam2024_solutions.pdf](week3_Exam2024_solutions.pdf)]
