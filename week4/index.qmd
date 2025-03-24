@@ -40,11 +40,11 @@ show_slides(week)
 ```
 
 
-<!-- ## Seminar code -->
+## Seminar code
 
-<!-- ::: {.callout appearance="minimal"} -->
-<!-- <i class="bi bi-download"></i> [Seminar_code_week4.R](Seminar_code_week4.R){download="Seminar_code_week4.R"} -->
-<!-- ::: -->
+::: {.callout appearance="minimal"}
+<i class="bi bi-download"></i> [week4_incomplete.R](week4_incomplete.R){download="week4_incomplete.R"}
+:::
 
 
 
