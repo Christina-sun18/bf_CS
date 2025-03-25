@@ -39,7 +39,7 @@ fc <- fit |> forecast(h = 3) #"3 years"
 fc  # is a fable() - forecast table
 
 fc |>
-  filter(Country == "Sweden") |> #, .model=="drift_method"
+  filter(Country == "Sweden", .model=="drift_method") |> #
   autoplot(gdppc) +
   labs(title = "GDP per capita for Sweden", y = "$US")
 
@@ -173,6 +173,21 @@ pi$lower
 ## 6.---------------------------------------
 ## Now try a decomposition forecasting model.
 
+# season(window=13) - Default setting - no science behind
+# trend(window=21) - Default setting - no science behind
+
+holidays |>
+  model(STL(Trips)) |> 
+  components() |> 
+  autoplot()
+
+holidays |>
+  model(STL(Trips)) |> 
+  components() |> 
+  select(season_adjust) |> 
+  autoplot()
+
+
 stl_fit <- holidays |>
   model(
     stlf = decomposition_model(
@@ -218,6 +233,7 @@ left_join(fit, stl_fit) |>
 training <- holidays |>
   filter(Quarter <= max(Quarter) - 12)
 
+training |> tail()
 training_fit <- training |>
   model(
     snaive = SNAIVE(Trips),
