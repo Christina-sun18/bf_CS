@@ -14,7 +14,8 @@ source(here::here("course_info.R"))
 
 ## Exercises (on your own or in tutorial)
 
-Complete Exercises 1, 3, 5, 11  from [Section 5.11 of the book](https://otexts.com/fpp3/toolbox-exercises.html).
+-   Complete Exercises 1, 3, 5, 11  from [Section 5.11 of the book](https://otexts.com/fpp3/toolbox-exercises.html).
+-   [Tutorial learning objectives](tute-lo.qmd).
 
 ## Exercise solutions
 
