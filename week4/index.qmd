@@ -20,9 +20,9 @@ source(here::here("course_info.R"))
 
 ## Exercise solutions
 
-<!-- ::: {.callout appearance="minimal"} -->
-<!-- <i class="bi bi-download"></i> [Week 4 Tutorial Solution.html](Week4.html){download="Week 4 Tutorial Solution.html"} -->
-<!-- ::: -->
+::: {.callout appearance="minimal"}
+<i class="bi bi-download"></i> [Week 4 Tutorial Solution.html](Week4.html){download="Week 4 Tutorial Solution.html"}
+:::
 
 
 ## Pre-seminar activities
