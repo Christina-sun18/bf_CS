@@ -7,22 +7,19 @@ week <- 4
 source(here::here("course_info.R"))
 ```
 
+## Tutorial exercises
+
+-   Complete Exercise 2, 3, 10 from [Section 3.7](https://otexts.com/fpp3/decomposition-exercises.html) of the book.
+-   [Tutorial learning objectives](tute-lo.qmd).
+-   <i class="bi bi-download"></i> [Week 4 Tutorial Solution.html](Week4.html){download="Week 4 Tutorial Solution.html"}
+
 ## What you will learn this week
 
 * Four benchmark forecasting methods that we will use for comparison
 * Fitted values, residuals
-* Forecasting with transformations
-
-## Exercises (on your own or in tutorial)
-
--   Complete Exercise 2, 3, 10 from [Section 3.7](https://otexts.com/fpp3/decomposition-exercises.html) of the book.
--   [Tutorial learning objectives](tute-lo.qmd).
-
-## Exercise solutions
-
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Week 4 Tutorial Solution.html](Week4.html){download="Week 4 Tutorial Solution.html"}
-:::
+* Forecasting using transformations
+* Forecasting with decompositions
+* Evaluating forecasts
 
 
 ## Pre-seminar activities

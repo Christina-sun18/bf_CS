@@ -7,23 +7,17 @@ week <- 3
 source(here::here("course_info.R"))
 ```
 
+## Tutorial exercises
+
+-   Complete Exercises 6, 7, 11 from [Section 2.10 of the book](https://otexts.com/fpp3/graphics-exercises.html).
+-   [Tutorial learning objectives](tute-lo.qmd).
+-   <i class="bi bi-download"></i> [Week 3 Tutorial Solution.html](Week3.html){download="Week 3 Tutorial Solution.html"}
+
 ## What you will learn this week
 
 * Transforming data to remove some sources of variation
 * Decomposing a time series into trend-cycle, seasonal and remainder components
 * Seasonal adjustment
-
-## Exercises (on your own or in tutorial)
-
--   Complete Exercises 6, 7, 11 from [Section 2.10 of the book](https://otexts.com/fpp3/graphics-exercises.html).
--   [Tutorial learning objectives](tute-lo.qmd).
-
-## Exercise solutions
-
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Week 3 Tutorial Solution.html](Week3.html){download="Week 3 Tutorial Solution.html"}
-:::
-
 
 ## Pre-seminar activities
 

@@ -11,3 +11,7 @@ By the end of this tutorial, you should be able to:
 
     -   Open and run the `IA_template.qmd` file.
     -   Knit the document to produce a PDF without errors.
+    
+-   **Start thinking about IA1**
+  
+    - Discuss with your fellow students how you would go about your forecasting tasks.

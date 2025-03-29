@@ -7,21 +7,17 @@ week <- 10
 source(here::here("course_info.R"))
 ```
 
+## Tutorial exercises
+
+-   Complete Exercises 9-13 from [Section 9.11 of the book](https://otexts.com/fpp3/arima-exercises.html).
+<!-- -   [Tutorial learning objectives](tute-lo.qmd). -->
+<!-- -   <i class="bi bi-download"></i> [Week 10 Tutorial Solution.html](Week10.html){download="Week 10 Tutorial Solution.html"} -->
+
 ## What you will learn this week
 
 * Useful predictors for time series forecasting using regression
 * Selecting predictors
 * Ex ante and ex post forecasting
-
-## Exercises (on your own or in tutorial)
-
-Complete Exercises 9-13 from [Section 9.11 of the book](https://otexts.com/fpp3/arima-exercises.html).
-
-## Exercise solutions
-
-<!-- ::: {.callout appearance="minimal"} -->
-<!-- <i class="bi bi-download"></i> [Week 10 Tutorial Solution.html](Week10.html){download="Week 10 Tutorial Solution.html"} -->
-<!-- ::: -->
 
 
 ## Pre-seminar activities
