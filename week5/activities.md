@@ -18,5 +18,6 @@
     a. Scale the data to be in millions and plot it. 
     b. Fit both a model with a linear and a damped trend and study the estimated parameters. 
     c. Generate forecasts for 30 years ahead from both models and plot them. What do you see? 
+    d. Fit both models using data up to 2010. Generate forecasts for the remainder of the sample and evaluate their accuracy.
     
 4. Do Exercise 6 from [Section 8.8](https://otexts.com/fpp3/expsmooth-exercises.html).

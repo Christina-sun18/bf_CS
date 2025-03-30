@@ -1,41 +1,41 @@
 library(fpp3)
 
 ## 1.-----------------------------------------
-## Use the tsibble created from `tourism` 
-## for holiday travel in Victoria and Queensland. 
+## Use the tsibble created from `tourism`
+## for holiday travel in Victoria and Queensland.
 
-## a. Plot the series to remind yourself what these look like. 
+## a. Plot the series to remind yourself what these look like.
 
 holidays <- tourism |>
-  filter(State %in% c("Victoria", "Queensland")) |> 
+  filter(State %in% c("Victoria", "Queensland")) |>
   filter(Purpose == "Holiday") |>
   as_tibble() |>
   summarise(Trips = sum(Trips), .by = c("State", "Quarter")) |>
   as_tsibble(index = Quarter, key = State)
 
 ## b. Use the `ETS()` function to fit models to both series.
-## Explore the resulting `mable` using `report()`, `glance()` 
+## Explore the resulting `mable` using `report()`, `glance()`
 ## and `tidy()`
 
 fit <- holidays |>
   model(ETS())
 
 fit
-  
+
 fit |>
   report()
-  
-fit |> 
-  glance() 
-  
+
+fit |>
+  glance()
+
   # report for each model using filter
 fit |>
   filter() |>
-  report() 
+  report()
 
 
   # Another useful function
-fit |> 
+fit |>
   tidy()
 
 
@@ -43,7 +43,7 @@ fit |>
 
 fit |>
   components() |>
-  autoplot() + 
+  autoplot() +
   labs(subtitle="")
 
   # Plot for each model using filter()
@@ -62,7 +62,7 @@ fit |>
 ## a. Plot the data. Is this time series white noise?
 ## What ETS model would be appropriate?
 
-algeria_economy <- global_economy  |> 
+algeria_economy <- global_economy  |>
   filter(Country == "Algeria")
 
 algeria_economy |> autoplot() + geom_point() #Be careful at what you are plotting
@@ -78,7 +78,7 @@ fit <- algeria_economy |>
     ANN = ETS(Exports ~ error("A") + trend("N") + season("N")),
     MNN = ETS()
   )
-  
+
 fit
   # an MNN is automatically chosen
 
@@ -87,66 +87,70 @@ fit |> select(MNN) |> report()
   # Notice the different parameters and sigma
 
 fit |> tidy()
-fit |> glance() 
+fit |> glance()
 
 
 ## c. Plot the components of the two models. What do you see?
 
 fit |>
-  components() 
+  components()
 
 
-## d. Explore the residuals of the two models. What do you see? 
+## d. Explore the residuals of the two models. What do you see?
 
-fit |> 
-  select(ANN) |> 
+fit |>
+  select(ANN) |>
   augment()
 
-fit |> 
-  select(MNN) |> 
+fit |>
+  select(MNN) |>
   augment()
   # Notice the difference in .innov and .resid
   # Why the difference?
 
-fit |> 
-  select(ANN) |> 
+fit |>
+  select(ANN) |>
   gg_tsresiduals()
 
-fit |> 
-  select(MNN) |> 
+fit |>
+  select(MNN) |>
   gg_tsresiduals()
 
 # e. Generate and plot forecasts.
 
   # Recall point forecasts are the mean of all possible futures
-  # i.e., expected values. 
-  # Notice the point forecasts are flat. 
+  # i.e., expected values.
+  # Notice the point forecasts are flat.
 
 
 ## 3.-----------------------------------------
 ## Use the population data for Australia `ÀUS` from the `global_economy` tsibble.
 
-## a. Scale the data to be in millions and plot it. 
+## a. Scale the data to be in millions and plot it.
 
 
 
-## b. Fit both a model with a linear and a damped trend 
-## and study the estimated parameters. 
+## b. Fit both a model with a linear and a damped trend
+## and study the estimated parameters.
 
 
-## c. Generate forecasts for 30 years ahead from both 
-## models and plot them. What do you see? 
+## c. Generate forecasts for 30 years ahead from both
+## models and plot them. What do you see?
 
 
+## d. Fit both models using data up to 2010. Generate forecast
+## for the remainder of the sample and evaluate their accuracy.
 
+
+## 4.-----------------------------------------
 # fpp3 8.8, Ex6
 
-# Forecast the Chinese GDP from the `global_economy` data set using an ETS model. 
-# Experiment with the various options in the `ETS()` function to see how much the 
-# forecasts change with damped trend, or with a Box-Cox transformation. Try to 
+# Forecast the Chinese GDP from the `global_economy` data set using an ETS model.
+# Experiment with the various options in the `ETS()` function to see how much the
+# forecasts change with damped trend, or with a Box-Cox transformation. Try to
 # develop an intuition of what each is doing to the forecasts.
 
-# Hint: use `h=20` when forecasting, so you can clearly see the differences 
+# Hint: use `h=20` when forecasting, so you can clearly see the differences
 # between the various options when plotting the forecasts.
 
 china <- global_economy |>
@@ -160,7 +164,7 @@ china |> autoplot(box_cox(GDP, 0.2))
 china |> features(GDP, guerrero)
 
   # Making lambda=0.2 looks ok.
-  # The Guerrero method suggests an even stronger transformation. 
+  # The Guerrero method suggests an even stronger transformation.
   # Let's also try a log.
 china |> autoplot(box_cox(GDP, 0))
 
@@ -180,9 +184,9 @@ fit |>
   forecast(h = "20 years") |>
   autoplot(china, level = NULL)
 
-  # The transformations have a big effect, with small lambda values 
-  # creating big increases in the forecasts. 
-  
+  # The transformations have a big effect, with small lambda values
+  # creating big increases in the forecasts.
+
 fit <- china |>
   model(
     ets = ETS(log(GDP)),
