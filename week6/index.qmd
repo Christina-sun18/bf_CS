@@ -9,8 +9,8 @@ source(here::here("course_info.R"))
 
 ## Tutorial exercises
 
--   Complete Exercises 1-4, 16, 17 from [Section 8.8](https://otexts.com/fpp3/expsmooth-exercises.html).
-<!-- -   [Tutorial learning objectives](tute-lo.qmd). -->
+-   Complete Exercises 1-5 from [Section 8.8](https://otexts.com/fpp3/expsmooth-exercises.html).
+-   [Tutorial learning objectives](tute-lo.qmd).
 <!-- -   <i class="bi bi-download"></i> [Week 6 Tutorial Solution.html](Week6.html){download="Week 6 Tutorial Solution.html"} -->
 
 
