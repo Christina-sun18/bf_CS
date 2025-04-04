@@ -2,7 +2,9 @@
 title: Group Assignment 2 (7%)
 ---
 
-Use the `GA2_template.qmd` to get started. Leave the `## Questions` and the pagebreaks `\newpage` as they are (do not remove these - these will help with marking the assignment). You are to submit both an `GA2_GroupNo.qmd` file and a compiled `GA2_GroupNo.pdf` file for your assignment.
+Use the `GA2_template.qmd` to get started. Leave the `## Questions` and the pagebreaks `\newpage` as they are (do not remove these - these will help with marking the assignment). 
+
+You are to submit both an `GA2_GroupNo.qmd` file and a compiled `GA2_GroupNo.pdf` file for your assignment.
 
 Follow the assignment questions/instructions to complete some specific tasks. Add code were necessary (you can add more R chunks if and where you need to) and text to answer the questions where necessary. Keep within the suggested word restrictions in order to get full marks (marks will be deducted for grossly going over the word limit). This is to encourage you to be concise in your writing. 
 
