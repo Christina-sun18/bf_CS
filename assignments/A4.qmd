@@ -2,7 +2,6 @@
 title: Individual Assignment 4 (18%)
 ---
 
-The data you are to forecast is the same series you used in IA2. 
 
 **Files for download**:
 
@@ -13,9 +12,7 @@ The data you are to forecast is the same series you used in IA2.
 <!-- ::: -->
 
 
-
-
-You are to submit both an `IA4_NameSurname.Rmd` file and a compiled `IA4_NameSurname.pdf` file for your assignment.
+You are to submit both an `IA4_NameSurname.qmd` file and a compiled `IA4_NameSurname.pdf` file for your assignment.
 
 
 

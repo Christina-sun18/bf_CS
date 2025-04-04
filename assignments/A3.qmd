@@ -13,7 +13,7 @@ The data you are to forecast is the same series you used in IA2.
 <!-- ::: -->
 
 
-You are to submit both an `IA3_NameSurname.Rmd` file and a compiled `IA3_NameSurname.pdf` file for your assignment.
+You are to submit both an `IA3_NameSurname.qmd` file and a compiled `IA3_NameSurname.pdf` file for your assignment.
 
 ```{r}
 #| output: asis
