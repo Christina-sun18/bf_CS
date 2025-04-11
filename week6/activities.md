@@ -4,15 +4,23 @@
 
 3. Generate forecasts from the fitted models. Why is the multiplicative model needed for Victoria? 
 
-4. Generate the `h02` series from the `PBS` tsibble we explored earlier using the code below.
+4. Generate the `h02` series from the `PBS` tsibble using the code below. Plot the data and study it's features. What ETS model would be appropriate for forecasting this data?
 
     ```r
     h02 <- PBS |>
-      filter(ATC2 == "H02") |>
-      summarise(Cost = sum(Cost))
+    filter(ATC2 == "H02") |>
+    summarise(Cost = sum(Cost))
     ```
-5. Find an `ETS` model and study it. Why has a damped trend been selected? 
+
+5. Find an `ETS` model and study it.
 
 6. Generate forecasts for the next few years. 
 
 7. Combine `STL` decomposition with `ETS` to forecast the `h02` series.
+
+8. Exam 2024
+
+      - Section A: Q1, Q2
+      - Section B: Q3d, Q3e, Q3f 
+      - Section C: all questions
+      - Solutions [[week6_Exam2024_solutions.pdf](week6_Exam2024_solutions.pdf)]
