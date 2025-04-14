@@ -21,11 +21,11 @@ Your forecasts should be submitted in moodle by **9.30am, on Monday, March 10**.
 
 
 
-```{r}
-#| output: asis
-source(here::here("course_info.R"))
-submit(schedule, "IA1")
-```
+<!-- ```{r} -->
+<!-- #| output: asis -->
+<!-- source(here::here("course_info.R")) -->
+<!-- submit(schedule, "IA1") -->
+<!-- ``` -->
 
 
 
