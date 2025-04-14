@@ -69,6 +69,16 @@ $$
 * Rank results for all students
 * Add ranks across all five items
 
+## Leaderboard
+
+```{r}
+#| eval: true
+#source(here::here("assignments/competition.R"))
+readRDS(here::here("assignments/leaders.rds")) |>
+  DT::datatable()
+```
+
+
 
 <!-- ### Submitted forecasts -->
 
