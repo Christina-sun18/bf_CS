@@ -21,11 +21,11 @@ Your forecasts should be submitted in moodle by **9.30am, on Monday, March 10**.
 
 
 
-```{r}
-#| output: asis
-source(here::here("course_info.R"))
-submit(schedule, "IA1")
-```
+<!-- ```{r} -->
+<!-- #| output: asis -->
+<!-- source(here::here("course_info.R")) -->
+<!-- submit(schedule, "IA1") -->
+<!-- ``` -->
 
 
 
@@ -68,6 +68,16 @@ $$
 * $u_+=max(u,0)$
 * Rank results for all students
 * Add ranks across all five items
+
+## Leaderboard
+
+```{r}
+#| eval: true
+#source(here::here("assignments/competition.R"))
+readRDS(here::here("assignments/leaders.rds")) |>
+  DT::datatable()
+```
+
 
 
 <!-- ### Submitted forecasts -->
